@@ -7,6 +7,7 @@ body{
     height: 400px;
     width: 400px;
     position: absolute;
+    border: 2px solid white;
     margin: auto;
     top: 0;
     bottom: 0;
@@ -152,4 +153,14 @@ body{
 .leg-r{
     bottom: 206px;
     left: 75px;
+}
+.nexticon{
+    position: absolute;
+    top: 860px;
+    left: 479px;
+}
+.nexticon img{
+    display: block;
+    width: 30px;
+    height: 30px;
 }
