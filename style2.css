@@ -51,18 +51,18 @@
 }
 .one{
     bottom: -111px;
-    left: 19px;
+    left: 34px;
     z-index: -1;
     animation: baloon1 1000ms normal forwards ease-in-out;
 }
 .second{
-    left: 88px;
+    left: 103px;
     bottom: -61px;
     z-index: -2;
     animation: baloon2 1000ms normal forwards ease-in-out;
 }
 .third{
-    left: 208px;
+    left: 223px;
     bottom: -132px;
     animation: baloon3 1000ms normal forwards ease-in-out;
 }
