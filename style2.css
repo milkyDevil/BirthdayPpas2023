@@ -52,12 +52,13 @@
 .one{
     bottom: -111px;
     left: 19px;
+    z-index: -1;
     animation: baloon1 1000ms normal forwards ease-in-out;
 }
 .second{
     left: 88px;
     bottom: -61px;
-    z-index: -1;
+    z-index: -2;
     animation: baloon2 1000ms normal forwards ease-in-out;
 }
 .third{
