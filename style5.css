@@ -1,0 +1,468 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: #6b207e;
+}
+.container {
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container .note1{
+    position: absolute;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+    color: wheat;
+    bottom: 278px;
+    right: -167px;
+    z-index: 1;
+    width: 331px; 
+}
+.container .bed {
+    background: #6b207e;
+    width: 365px;
+    height: 580px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.container .bed .bed-shadow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.container .bed .ground-cloth {
+    width: 340px;
+    height: 210px;
+    background: #9500af;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+}
+.container .bed .ground-cloth:after {
+    content: " ";
+    width: 100%;
+    height: 15px;
+    background: #6b207e;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.container .bed .ground-cloth .under-pillow-shadows {
+    width: 100px;
+    height: 65px;
+    position: absolute;
+    bottom: 0;
+    left: 110px;
+    overflow: hidden;
+}
+.container .bed .ground-cloth .under-pillow-shadows .head-shadow {
+    width: 92px;
+    height: 90px;
+    border-radius: 0 0 46px 46px;
+    position: absolute;
+    bottom: 31px;
+    left: 2px;
+    background: #6b207e;
+}
+.container .bed .ground-cloth .under-pillow-shadows .neck-shadow {
+    width: 22px;
+    height: 35px;
+    position: absolute;
+    bottom: 7px;
+    left: 36px;
+    background: #6b207e;
+}
+.container .bed .ground-cloth .pillow {
+    width: 230px;
+    height: 110px;
+    position: absolute;
+    border-radius: 8px;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #7b208b;
+    /* box-shadow: 0px 10px 0px 4px #4b4d76; */
+    box-shadow: 0px 10px 0px 4px #6b207e;
+    overflow: hidden;
+}
+.container .bed .ground-cloth .pillow .pillow-shadows {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: inset 0px -5px 0px #6b207e;
+    overflow: hidden;
+}
+.container .bed .ground-cloth .pillow .pillow-shadows .ear-shadow {
+    background: #6b207e;
+    border-radius: 50%;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    bottom: -8px;
+    left: 46px;
+}
+.container .bed .ground-cloth .pillow .pillow-shadows .head-shadow {
+    background: #6b207e;
+    border-radius: 50%;
+    width: 71px;
+    height: 90px;
+    position: absolute;
+    bottom: -6px;
+    left: 54px;
+    transform: rotate(10deg);
+}
+.container .bed .ground-cloth .boy {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: 99;
+}
+.container .bed .ground-cloth .boy .shoulder {
+    width: 110px;
+    height: 110px;
+    background: #6b207e;
+    border-radius: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: -62px;
+    transform: scaleY(0.5) translateX(-50%) rotate(-45deg);
+}
+.container .bed .ground-cloth .boy .neck {
+    width: 22px;
+    height: 35px;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translateX(-50%);
+    background: #6b207e;
+    border-radius: 50px / 20px;
+    box-shadow: inset 0px -20px 0px #e18371;
+}
+.container .bed .ground-cloth .boy .ears {
+    position: absolute;
+    left: 50%;
+    bottom: 107px;
+    transform: translateX(-50%);
+}
+.container .bed .ground-cloth .boy .ears:after, .container .bed .ground-cloth .boy .ears:before {
+    content: " ";
+    position: absolute;
+    left: -60px;
+    width: 18px;
+    height: 18px;
+    background: #6b207e;
+    border: 5px solid #e18371;
+    border-radius: 50%;
+}
+.container .bed .ground-cloth .boy .ears:after {
+    left: 32px;
+}
+.container .bed .ground-cloth .boy .head {
+    width: 92px;
+    height: 90px;
+    border-radius: 0 0 46px 46px;
+    position: absolute;
+    left: 50%;
+    bottom: 43px;
+    transform: translateX(-50%);
+    /* background: #e36559;
+    box-shadow: inset 0px -7px 0px #b34c39; */
+    background: #df8a82;
+    box-shadow: inset 0px -7px 0px #e18371;
+}
+.container .bed .ground-cloth .boy .head .nose {
+    width: 13px;
+    height: 22px;
+    /* background: #b54b3e; */
+    background: #d3786d;
+    border-radius: 10px;
+    position: absolute;
+    animation: yawnForNose 5s infinite ease-in-out;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .bed .ground-cloth .boy .head .nose:after, .container .bed .ground-cloth .boy .head .nose:before {
+    content: " ";
+    width: 10px;
+    height: 8px;
+    background: #d3786d;
+    border-radius: 50%;
+    position: absolute;
+    left: -25px;
+    top: 22px;
+}
+.container .bed .ground-cloth .boy .head .nose:after {
+    left: 28px;
+}
+.container .bed .ground-cloth .boy .head .eyebrows {
+    position: absolute;
+    bottom: 67px;
+    left: 50%;
+    transform: translateX(-50%);
+    perspective: 50px;
+}
+.container .bed .ground-cloth .boy .head .eyebrows .eyebrow {
+    width: 30px;
+    height: 9px;
+    border-radius: 30% 50% 30% 70%;
+    background: #6b207e;
+    position: absolute;
+    left: -38px;
+    top: -8px;
+    transform: rotateY(-38deg) scaleX(1.3) rotate(-2deg);
+}
+.container .bed .ground-cloth .boy .head .eyebrows .eyebrow:nth-child(2) {
+    left: 4px;
+    transform: rotateY(117deg) scaleX(0.8) rotate(180deg) rotateY(180deg);
+}
+.container .bed .ground-cloth .boy .head .eyes {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: yawnForEyes 5s infinite ease-in-out;
+}
+.container .bed .ground-cloth .boy .head .eyes:after, .container .bed .ground-cloth .boy .head .eyes:before {
+    content: " ";
+    width: 9px;
+    height: 9px;
+    border: 2.5px solid #6b207e;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    transform: rotate(-45deg);
+    border-radius: 50%;
+    position: absolute;
+    left: -28px;
+    top: 0;
+}
+.container .bed .ground-cloth .boy .head .eyes:after {
+    left: 13px;
+}
+.container .bed .ground-cloth .boy .head .mouth {
+    height: 12px;
+    animation: yawnForMouth 5s infinite ease-in-out;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #6b207e;
+}
+.container .bed .ground-cloth .boy .head .mouth:after {
+    content: " ";
+    position: absolute;
+    top: 6px;
+    width: 20px;
+    height: 17px;
+    border-radius: 50%;
+    box-shadow: inset 0px -10px 0px -5px #d3786d;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .bed .ground-cloth .boy .hair {
+    position: absolute;
+    bottom: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .bed .ground-cloth .boy .hair .part {
+    position: absolute;
+    border-radius: 50%;
+    /* background: #342b4a; */
+    background: #682c18;
+}
+.container .bed .ground-cloth .boy .hair .part.keen:after, .container .bed .ground-cloth .boy .hair .part.keen:before {
+    content: " ";
+    width: 50px;
+    height: 25px;
+    border-radius: 25px 25px 0 0;
+    background: #682c18;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleY(0.7) skew(28deg);
+}
+.container .bed .ground-cloth .boy .hair .part.keen:after {
+    border-radius: 0 0 25px 25px;
+    transform: scaleY(0.7) skew(-28deg);
+    top: 17px;
+}
+.container .bed .ground-cloth .boy .hair .part:nth-child(1) {
+    width: 85px;
+    height: 40px;
+    left: -41px;
+    bottom: -4px;
+}
+.container .bed .ground-cloth .boy .hair .part:nth-child(2) {
+    left: 43px;
+    bottom: 30px;
+    transform: rotate(69deg) scale(0.85) scaleY(0.8);
+}
+.container .bed .ground-cloth .boy .hair .part:nth-child(3) {
+    left: -20px;
+    bottom: 15px;
+    transform: rotate(107deg) scale(0.75) scaleY(0.9);
+}
+.container .bed .ground-cloth .boy .hair .part:nth-child(4) {
+    left: -29px;
+    bottom: 17px;
+    transform: rotate(18deg) scale(0.9) scaleY(0.5);
+}
+.container .bed .ground-cloth .boy .hair .part:nth-child(5) {
+    left: -25px;
+    bottom: 33px;
+    transform: rotate(-26deg) scale(0.9) scaleY(0.8);
+}
+.container .bed .ground-cloth .boy .hair .part:nth-child(6) {
+    left: -47px;
+    bottom: 21px;
+    transform: rotate(-48deg) scale(0.9) scaleY(0.8);
+}
+.container .bed .ground-cloth .boy .hair .part:nth-child(7) {
+    left: -54px;
+    bottom: -28px;
+    width: 21px;
+    height: 10px;
+    border-radius: 30px;
+    transform: rotate(85deg) skew(-24deg);
+}
+.container .bed .ground-cloth .boy .hair .part:nth-child(8) {
+    left: 32px;
+    bottom: -26px;
+    width: 23px;
+    height: 10px;
+    border-radius: 30px;
+    transform: rotate(95deg) skew(24deg);
+}
+.container .bed .quilt {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 340px;
+    height: 350px;
+    background: #6b207e;
+}
+.container .bed .quilt .top {
+    width: 354px;
+    height: 75px;
+    border-radius: 8px;
+    background: #7b208b;
+    position: absolute;
+    top: 0;
+    left: -7px;
+    overflow: hidden;
+}
+.container .bed .quilt .bottom {
+    width: 100%;
+    height: 252px;
+    border-radius: 0 0 8px 8px;
+    background: #7b208b;
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    overflow: hidden;
+}
+.container .bed .quilt .bottom .note{
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    overflow: hidden;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: justify;
+    color: wheat;
+}
+
+@keyframes yawnForMouth {
+    0%, 50%, 100% {
+        bottom: 22px;
+        width: 24px;
+        border-radius: 5px 5px 12px 12px;
+    }
+    75% {
+        bottom: 18px;
+        width: 12px;
+        border-radius: 12px;
+    }
+}
+@keyframes yawnForNose {
+    0%, 50%, 100% {
+        bottom: 45px;
+    }
+    75% {
+        bottom: 42px;
+    }
+}
+@keyframes yawnForEyes {
+    0%, 50%, 100% {
+        bottom: 66px;
+    }
+    75% {
+        bottom: 65px;
+    }
+}
+.sleeping {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 18%;
+    left: 77%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.sleeping > span {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 80px;
+    opacity: 0;
+    animation:sleep 9s infinite linear;
+}
+.sleeping > span:nth-child(2n){
+    animation:sleep 9s infinite linear;
+    animation-delay:3s;
+}
+.sleeping > span:nth-child(3n){
+    animation:sleep 9s infinite linear;
+    animation-delay:6s;
+}
+@keyframes sleep {
+    0% {
+        transform: translate(0, 0) scale(0.3);
+        opacity: 0;
+    }
+    1% {
+        opacity: 0;
+    }
+    3% {
+        opacity: 1;
+    }
+    50% {
+        transform:translate(90%, -50%) scale(0.65);
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        transform:translate(180%, -100%) scale(1);
+        opacity: 0;
+    }
+}
+

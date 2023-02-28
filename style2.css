@@ -1,65 +1,96 @@
-body{
-    background-color: #000000;
-    padding: 0;
-    margin: 0;
-}
-.loadingDiv{
-    height: 150px;
-    width: 300px;
-    border-top: 22px solid #fbb226;
-    position: absolute;
-    margin: auto;
+.balloon {
+    width: 100px;
+    height: 100px;
+    border-radius: 100% 100% 15% 100%;
+    margin: 0 0 0 25px;
+    transform: rotateZ(45deg);
+    position: fixed;
+    bottom: calc(-1 * 150);
     left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+    background-color: aqua;
 }
-.ball{
-    height: 150px;
-    width: 5px;
-    background-color: #fbb226;
-    position: relative;
-    transform-origin: top;
-}
-.ball::after{
-    position: absolute;
+.balloon::before {
     content: "";
-    height: 60px;
-    width: 60px;
-    background-color: white;
-    border-radius: 50%;
-    left: -30px;
-    bottom: -60px;
+    width: 10%;
+    height: 25%;
+    background: radial-gradient(circle, rgba(255,255,255,.7) 0%, rgba(255,255,255,.1) 100%);
+    position: absolute;
+    left: 15%;
+    top: 45%;
+    border-radius: 100%;
 }
-.ball:first-child{
-    animation: swing1 1.2s infinite linear;
+.balloon::after {
+    content: "";
+    width: 13%;
+    height: 5%;
+    background-color: inherit;
+    position: absolute;
+    left: 90%;
+    top: 94%;
+    border-radius: 22%;
+    transform: rotateZ(-45deg);
 }
-@keyframes swing1{
-    25%{
-        transform: rotate(50deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
+.balloon .string {
+    position: absolute;
+    background-color: #990;
+    width: 2px;
+    height: 100px;
+    transform-origin: top center;
+    transform: rotateZ(-45deg);
+    top: 96px;
+    left: 95px;
+}
+.yellow{
+    background-color: rgba(150, 150, 0, .45);
+}
+.blue{
+    background-color: rgba(0, 0, 150, .45);
+}
+.purple{
+    background-color: rgba(150, 0, 0, .45);
+}
+.one{
+    bottom: -111px;
+    left: 10px;
+    animation: baloon1 1000ms normal forwards ease-in-out;
+}
+.second{
+    left: 79px;
+    bottom: -61px;
+    z-index: -1;
+    animation: baloon2 1000ms normal forwards ease-in-out;
+}
+.third{
+    left: 200px;
+    bottom: -132px;
+    animation: baloon3 1000ms normal forwards ease-in-out;
+}
+.birthdayWish{
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-size: 17px;
+    font-family: monospace;
+    opacity: 0;
+    animation: wish 1000ms normal forwards ease-in-out;
+}
+@keyframes baloon1{
     100%{
-        transform: rotate(0deg);
+        bottom: 111px;
     }
 }
-.ball:last-child{
-    animation: swing2 1.2s 0.6s infinite linear;
-}
-@keyframes swing2{
-    25%{
-        transform: rotate(-50deg);
-    }
-    50%{
-        transform: rotate(0deg);
-    }
+@keyframes baloon2{
     100%{
-        transform: rotate(0deg);
+        bottom: 61px;
+    }
+}
+@keyframes baloon3{
+    100%{
+        bottom: 132px;
+    }
+}
+@keyframes wish{
+    100%{
+        opacity: 1;
     }
 }

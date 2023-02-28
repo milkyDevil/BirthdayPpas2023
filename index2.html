@@ -9,17 +9,35 @@
   </head>
 
   <body>
-    <section>
-      <a href="index3.html">
-      <div class="loadingDiv">
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-        <div class="ball"></div>
-      </div>
+    <div class="birthdayWish" id="birthdayWish"></div>
+    <a href="index3.html">
+    <div class="balloon one">
+      <div class="string"></div>
+    </div>
     </a>
-    </section>
-    <script type="text/javascript" src="main.js"></script>
+    <a href="index3.html">
+    <div class="balloon yellow second">
+      <div class="string"></div>
+    </div>
+  </a>
+  <a href="index3.html">
+    <div class="balloon purple third">
+      <div class="string"></div>
+    </div>
+  </a>
+    <script type="text/javascript">
+      let BinaryWish = 
+      [{hexcode:"01001000",colorcode:"#246c6c",charCode:"H"},{hexcode:"01100001",colorcode:"#17a917",charCode:"A"},{hexcode:"01110000",colorcode:"#A020F0",charCode:"P"},{hexcode:"01110000",colorcode:"#342929",charCode:"P"},{hexcode:"01111001",colorcode:"#342929",charCode:"Y"},{hexcode:"00100000",colorcode:"#A020F0",charCode:""},{hexcode:"01000010",colorcode:"#17a917",charCode:"B"},{hexcode:"01101001",colorcode:"#246c6c",charCode:"I"},{hexcode:"01110010",colorcode:"#17a917",charCode:"R"},{hexcode:"01110100",colorcode:"#246c6c",charCode:"T"},{hexcode:"01101000",colorcode:"#342929",charCode:"H"},{hexcode:"01100100",colorcode:"#A020F0",charCode:"D"},{hexcode:"01100001",colorcode:"#A020F0",charCode:"A"},{hexcode:"01111001",colorcode:"#342929",charCode:"Y"},{hexcode:"00100000",colorcode:"#246c6c",charCode:""},{hexcode:"01000010",colorcode:"#17a917",charCode:"B"},
+      {hexcode:"01100101",colorcode:"#246c6c",charCode:"E"},{hexcode:"01110011",colorcode:"#17a917",charCode:"S"},{hexcode:"01110100",colorcode:"#A020F0",charCode:"T"},{hexcode:"01000110",colorcode:"#342929",charCode:"F"},{hexcode:"01110010",colorcode:"#342929",charCode:"R"},{hexcode:"01101001",colorcode:"#A020F0",charCode:"I"},{hexcode:"01100101",colorcode:"#17a917",charCode:"E"},{hexcode:"01101110",colorcode:"#246c6c",charCode:"N"},{hexcode:"01100100",colorcode:"#17a917",charCode:"D"},{hexcode:"00101111",colorcode:"#246c6c",charCode:"/"},{hexcode:"01000010",colorcode:"#342929",charCode:"B"},{hexcode:"01101111",colorcode:"#A020F0",charCode:"O"},{hexcode:"01111001",colorcode:"#A020F0",charCode:"Y"},{hexcode:"01000110",colorcode:"#342929",charCode:"F"},{hexcode:"01110010",colorcode:"#246c6c",charCode:"R"},{hexcode:"01101001",colorcode:"#17a917",charCode:"I"},
+      {hexcode:"01100101",colorcode:"#246c6c",charCode:"E"},{hexcode:"01101110",colorcode:"#17a917",charCode:"N"},{hexcode:"01100100",colorcode:"#A020F0",charCode:"D"},{hexcode:"00101111",colorcode:"#342929",charCode:"/"},{hexcode:"01001000",colorcode:"#342929",charCode:"H"},{hexcode:"01110101",colorcode:"#A020F0",charCode:"U"},{hexcode:"01110011",colorcode:"#17a917",charCode:"S"},{hexcode:"01100010",colorcode:"#246c6c",charCode:"B"},{hexcode:"01100001",colorcode:"#17a917",charCode:"A"},{hexcode:"01101110",colorcode:"#246c6c",charCode:"N"},{hexcode:"01100100",colorcode:"#342929",charCode:"D"},{hexcode:"00100000",colorcode:"#A020F0",charCode:""},{hexcode:"00100001",colorcode:"#A020F0",charCode:"!"},{hexcode:"00001010",colorcode:"#342929",charCode:""},{hexcode:"01011001",colorcode:"#246c6c",charCode:"Y"},{hexcode:"01101111",colorcode:"#17a917",charCode:"O"},
+      {hexcode:"01110101",colorcode:"#246c6c",charCode:"U"},{hexcode:"00100000",colorcode:"#17a917",charCode:""},{hexcode:"01100001",colorcode:"#A020F0",charCode:"A"},{hexcode:"01110010",colorcode:"#342929",charCode:"R"},{hexcode:"01100101",colorcode:"#342929",charCode:"E"},{hexcode:"00100000",colorcode:"#A020F0",charCode:""},{hexcode:"01100110",colorcode:"#17a917",charCode:"F"},{hexcode:"01101001",colorcode:"#246c6c",charCode:"I"},{hexcode:"01101110",colorcode:"#17a917",charCode:"N"},{hexcode:"01100001",colorcode:"#246c6c",charCode:"A"},{hexcode:"01101100",colorcode:"#342929",charCode:"L"},{hexcode:"01101100",colorcode:"#A020F0",charCode:"L"},{hexcode:"01111001",colorcode:"#A020F0",charCode:"Y"},{hexcode:"00100000",colorcode:"#342929",charCode:""},{hexcode:"01110101",colorcode:"#246c6c",charCode:"U"},{hexcode:"01110000",colorcode:"#17a917",charCode:"P"},
+      {hexcode:"01100111",colorcode:"#246c6c",charCode:"G"},{hexcode:"01110010",colorcode:"#17a917",charCode:"R"},{hexcode:"01100001",colorcode:"#A020F0",charCode:"A"},{hexcode:"01100100",colorcode:"#342929",charCode:"D"},{hexcode:"01100101",colorcode:"#342929",charCode:"E"},{hexcode:"01100100",colorcode:"#A020F0",charCode:"D"},{hexcode:"00100000",colorcode:"#17a917",charCode:""},{hexcode:"01110100",colorcode:"#246c6c",charCode:"T"},{hexcode:"01101111",colorcode:"#17a917",charCode:"O"},{hexcode:"00100000",colorcode:"#246c6c",charCode:""},{hexcode:"01110110",colorcode:"#342929",charCode:"V"},{hexcode:"01100101",colorcode:"#A020F0",charCode:"E"},{hexcode:"01110010",colorcode:"#A020F0",charCode:"R"},{hexcode:"01110011",colorcode:"#342929",charCode:"S"},{hexcode:"01101001",colorcode:"#246c6c",charCode:"I"},{hexcode:"01101111",colorcode:"#17a917",charCode:"O"},
+      {hexcode:"01101110",colorcode:"#246c6c",charCode:"N"},{hexcode:"00100000",colorcode:"#17a917",charCode:""},{hexcode:"00110011",colorcode:"#A020F0",charCode:"3"},{hexcode:"00110011",colorcode:"#342929",charCode:"3"},{hexcode:"00101110",colorcode:"#342929",charCode:"."},{hexcode:"00110000",colorcode:"#A020F0",charCode:"0"},{hexcode:"00100000",colorcode:"#17a917",charCode:""},{hexcode:"00100001",colorcode:"#246c6c",charCode:"!"}];
+      let divs = ""
+      for(let i= 0; i< BinaryWish.length; i++){
+         divs = divs+"<span style='color:"+BinaryWish[i].colorcode+"'>"+BinaryWish[i].hexcode+"</span>&nbsp;"
+      }
+      document.getElementById("birthdayWish").innerHTML = divs
+    </script>
   </body>
 </html>
