@@ -51,17 +51,17 @@
 }
 .one{
     bottom: -111px;
-    left: 10px;
+    left: 19px;
     animation: baloon1 1000ms normal forwards ease-in-out;
 }
 .second{
-    left: 79px;
+    left: 88px;
     bottom: -61px;
     z-index: -1;
     animation: baloon2 1000ms normal forwards ease-in-out;
 }
 .third{
-    left: 200px;
+    left: 208px;
     bottom: -132px;
     animation: baloon3 1000ms normal forwards ease-in-out;
 }
@@ -69,7 +69,7 @@
     border: 1px solid transparent;
     box-sizing: border-box;
     word-wrap: break-word;
-    font-size: 17px;
+    font-size: 20px;
     font-family: monospace;
     opacity: 0;
     animation: wish 1000ms normal forwards ease-in-out;
