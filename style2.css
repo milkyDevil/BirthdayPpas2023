@@ -53,18 +53,18 @@
     bottom: -111px;
     left: 34px;
     z-index: -1;
-    animation: baloon1 1000ms normal forwards ease-in-out;
+    animation: baloon1 1000ms normal forwards ease-in-out, balloon1anim 5s ease-in-out infinite;
 }
 .second{
     left: 103px;
     bottom: -61px;
     z-index: -2;
-    animation: baloon2 1000ms normal forwards ease-in-out;
+    animation: baloon2 1000ms normal forwards ease-in-out, balloon2anim 5s ease-in-out infinite;
 }
 .third{
     left: 223px;
     bottom: -132px;
-    animation: baloon3 1000ms normal forwards ease-in-out;
+    animation: baloon3 1000ms normal forwards ease-in-out, balloon3anim 5s ease-in-out infinite;
 }
 .birthdayWish{
     border: 1px solid transparent;
@@ -80,14 +80,38 @@
         bottom: 111px;
     }
 }
+@keyframes balloon1anim{
+    0%, 100% {
+        transform: translateY(0) rotate(47deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(43deg);
+    }
+}
 @keyframes baloon2{
     100%{
         bottom: 61px;
     }
 }
+@keyframes balloon2anim{
+    0%, 100% {
+        transform: translateY(0) rotate(43deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(47deg);
+    }
+}
 @keyframes baloon3{
     100%{
         bottom: 132px;
+    }
+}
+@keyframes balloon3anim{
+    0%, 100% {
+        transform: translateY(0) rotate(47deg);
+    }
+    50% {
+        transform: translateY(-20px) rotate(43deg);
     }
 }
 @keyframes wish{
